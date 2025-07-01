@@ -167,6 +167,102 @@
             Losses</a
           >
         </div>
+
+        <h2>7. Result Comparison Table</h2>
+        <table
+          style="
+            width: 100%;
+            border-collapse: collapse;
+            font-family: Arial, sans-serif;
+          "
+        >
+          <thead>
+            <tr
+              style="background-color: #007bff; color: white; text-align: left"
+            >
+              <th style="padding: 0.75rem; border: 1px solid #ccc">Aspect</th>
+              <th style="padding: 0.75rem; border: 1px solid #ccc">
+                ThoughtViz Paper
+              </th>
+              <th style="padding: 0.75rem; border: 1px solid #ccc">
+                Our (Current)
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background-color: #f9f9f9">
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                EEG Preprocessing
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                3D STFT Spectrogram
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">Same</td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">GAN Type</td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">AC-GAN</td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Conditional GAN with Early Stop
+              </td>
+            </tr>
+            <tr style="background-color: #f9f9f9">
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Masking Applied
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                ❌ None (baseline)
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Time & Channel Masking
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Classifier Used
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Pretrained CNN
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Your own high-acc CNN
+              </td>
+            </tr>
+            <tr style="background-color: #f9f9f9">
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Best Accuracy (Char)
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                <strong>79.95%</strong>
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                <strong>90.00%</strong> (Time Masking)
+              </td>
+            </tr>
+            <tr>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Evaluation Outputs
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Accuracy, Confusion, Grid
+              </td>
+              <td style="padding: 0.75rem; border: 1px solid #ccc">
+                Same (HTML-ready, confusion, plots)
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <h3>ThoughtViz Paper - Table 3 | we got 90% accuracy</h3>
+        <img
+          src="ThoughtViz_paper_table3_ss.jpeg"
+          alt="ThoughtViz Paper Table 3"
+          style="
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+          "
+        />
       </section>
     </main>
     <footer>© 2025 ThoughtViz GAN Report | Siddharth Pathak</footer>
