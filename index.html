@@ -61,6 +61,23 @@
       <h1>ThoughtViz Report Showcase</h1>
     </header>
     <main>
+      <section style="text-align: center; font-size: 1rem; margin: 2rem 0">
+        <div
+          style="
+            display: inline-block;
+            background-color: #fff3cd;
+            color: black;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ffeeba;
+            font-weight: bold;
+            font-size: 1.1rem;
+          "
+        >
+          EEG → Spectrogram (STFT) → ⛔ Channel Masking [0, 1, 2] → Masked
+          Spectrogram → GAN → Generated Image → Classifier → Accuracy
+        </div>
+      </section>
       <section>
         <h2>1. Original EEG Signals</h2>
         <div class="img-grid">
@@ -121,6 +138,32 @@
             ><img src="channel_GAN_output/training_losses.png" /><br />Training
             Losses</a
           >
+        </div>
+      </section>
+      <hr
+        style="
+          border: none;
+          border-top: 2px solid #ccc;
+          margin: 2rem auto;
+          width: 80%;
+        "
+      />
+
+      <section style="text-align: center; font-size: 1rem; margin: 2rem 0">
+        <div
+          style="
+            display: inline-block;
+            background-color: #fff3cd;
+            color: black;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #ffeeba;
+            font-weight: bold;
+            font-size: 1.1rem;
+          "
+        >
+          EEG → Spectrogram (STFT) → ⛔ Time Masking → Masked Spectrogram → GAN
+          → Generated Image → Classifier → Accuracy
         </div>
       </section>
 
