@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThoughtViz Report Showcase</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f7f7f7;
+        color: #333;
+      }
+      header {
+        background-color: #343a40;
+        color: white;
+        padding: 1rem;
+        text-align: center;
+      }
+      main {
+        padding: 1rem;
+        max-width: 1200px;
+        margin: auto;
+      }
+      section {
+        margin-bottom: 2rem;
+      }
+      h2 {
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 0.5rem;
+      }
+      .img-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
+      .img-grid a {
+        flex: 1 0 200px;
+        text-align: center;
+        text-decoration: none;
+        color: #007bff;
+        font-size: 0.9rem;
+      }
+      .img-grid img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+      }
+      footer {
+        text-align: center;
+        font-size: 0.8rem;
+        color: #777;
+        margin: 2rem 0;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>ThoughtViz Report Showcase</h1>
+    </header>
+    <main>
+      <section>
+        <h2>1. Original EEG Signals</h2>
+        <div class="img-grid">
+          <!-- Replace with loop if dynamic -->
+          <a href="original_eeg_plots/eeg_A_0.png" target="_blank"
+            ><img src="original_eeg_plots/eeg_A_0.png" /><br />A</a
+          >
+          <a href="original_eeg_plots/eeg_C_1.png" target="_blank"
+            ><img src="original_eeg_plots/eeg_C_1.png" /><br />C</a
+          >
+          <!-- Add rest... -->
+        </div>
+      </section>
+
+      <section>
+        <h2>2. Original Spectrograms</h2>
+        <div class="img-grid">
+          <a href="original_spectrogram_plots/spec_A_0.png" target="_blank"
+            ><img src="original_spectrogram_plots/spec_A_0.png" /><br />A</a
+          >
+          <a href="original_spectrogram_plots/spec_C_1.png" target="_blank"
+            ><img src="original_spectrogram_plots/spec_C_1.png" /><br />C</a
+          >
+          <!-- Add rest... -->
+        </div>
+      </section>
+
+      <section>
+        <h2>3. Channel-Masked Spectrograms</h2>
+        <div class="img-grid">
+          <a
+            href="channel_masked_spectrogram_channelwise_plots/masked_channels_A_0.png"
+            target="_blank"
+            ><img
+              src="channel_masked_spectrogram_channelwise_plots/masked_channels_A_0.png"
+            /><br />A</a
+          >
+          <!-- Add rest... -->
+        </div>
+      </section>
+
+      <section>
+        <h2>4. Channel GAN Outputs</h2>
+        <div class="img-grid">
+          <a
+            href="channel_GAN_output/real_vs_generated_grid.png"
+            target="_blank"
+            ><img
+              src="channel_GAN_output/real_vs_generated_grid.png"
+            /><br />Real vs Generated | Accuracy: 80.00%</a
+          >
+          <a href="channel_GAN_output/confusion_matrix.png" target="_blank"
+            ><img
+              src="channel_GAN_output/confusion_matrix.png"
+            /><br />Confusion Matrix</a
+          >
+          <a href="channel_GAN_output/training_losses.png" target="_blank"
+            ><img src="channel_GAN_output/training_losses.png" /><br />Training
+            Losses</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <h2>5. Time-Masked Spectrogram Verification</h2>
+        <div class="img-grid">
+          <a
+            href="time_masking_verification_plots/original_sample.png"
+            target="_blank"
+            ><img
+              src="time_masking_verification_plots/original_sample.png"
+            /><br />Original Sample</a
+          >
+          <a
+            href="time_masking_verification_plots/masked_sample.png"
+            target="_blank"
+            ><img
+              src="time_masking_verification_plots/masked_sample.png"
+            /><br />Masked Sample</a
+          >
+          <a
+            href="time_masking_verification_plots/mask_highlight.png"
+            target="_blank"
+            ><img
+              src="time_masking_verification_plots/mask_highlight.png"
+            /><br />Mask Highlight</a
+          >
+        </div>
+      </section>
+
+      <section>
+        <h2>6. Time GAN Outputs</h2>
+        <div class="img-grid">
+          <a href="time_GAN_output/real_vs_generated_grid.png" target="_blank"
+            ><img src="time_GAN_output/real_vs_generated_grid.png" /><br />Real
+            vs Generated | Accuracy: 90.00%</a
+          >
+          <a href="time_GAN_output/confusion_matrix.png" target="_blank"
+            ><img src="time_GAN_output/confusion_matrix.png" /><br />Confusion
+            Matrix</a
+          >
+          <a href="time_GAN_output/training_losses.png" target="_blank"
+            ><img src="time_GAN_output/training_losses.png" /><br />Training
+            Losses</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>© 2025 ThoughtViz GAN Report | Siddharth Pathak</footer>
+  </body>
+</html>
